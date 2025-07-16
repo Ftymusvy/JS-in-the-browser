@@ -35,6 +35,16 @@
 // setInterval(()=> {
 //       console.log("interval")
 // }, 3000)
-setTimeout(()=> {
-      console.log("interval")
-}, 3000)
+// setTimeout(()=> {
+//       console.log("interval")
+// }, 3000)
+
+
+
+
+
+
+//موقعیت مکانی
+navigator.geolocation.getCurrentPosition((p)=>{
+  console.log(`${p.coords.latitude},${p.coords.longitude}`)
+})
