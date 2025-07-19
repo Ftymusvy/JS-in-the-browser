@@ -44,7 +44,14 @@
 
 
 
-//موقعیت مکانی
-navigator.geolocation.getCurrentPosition((p)=>{
-  console.log(`${p.coords.latitude},${p.coords.longitude}`)
-})
+// //موقعیت مکانی
+// navigator.geolocation.getCurrentPosition((p)=>{
+//   console.log(`${p.coords.latitude},${p.coords.longitude}`)
+// })
+
+
+let listItems = document.getElementsByClassName("to-do-item");
+
+Array.from(listItems).forEach(element => { 
+  console.log(element);
+});
