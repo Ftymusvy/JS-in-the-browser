@@ -50,8 +50,17 @@
 // })
 
 
-let listItems = document.getElementsByClassName("to-do-item");
+// let listItems = document.getElementsByClassName("to-do-item");
 
-Array.from(listItems).forEach(element => { 
-  console.log(element);
-});
+
+// Array.from(listItems).forEach(element => { 
+//   console.log(element);
+// });
+
+let att = document.createAttribute("target")
+
+att.value = "_blank"
+
+att
+
+document.getElementById("ref-link").setAttributeNode(att)
