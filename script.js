@@ -67,3 +67,25 @@ document.getElementById("ref-link").setAttributeNode(att)
 
 document.querySelector("#main-title").style = "color:green"
 document.querySelector("#main-title").style = "color:green;background-color:blue"
+
+// ---------------------------------------------------------
+//نکته remove
+// let lists =document.getElementById("to-do-list")
+
+// undefined
+// lists
+// <ul id=​"to-do-list">​…​</ul>​
+// let classes = document.getElementsByClassName("title")
+
+// undefined
+// classes
+
+// HTMLCollection(4) [h2.title, h2#main-title.title, h2#main-title.title, h2.title, main-title: h2#main-title.title]
+// let classes1 = document.getElementsByClassName("to-do-item")
+
+// undefined
+// classes1
+
+// HTMLCollection(4) [li.to-do-item, li.to-do-item, li.to-do-item, li.to-do-item]
+// let classes1 = document.getElementsByClassName("to-do-item")[1].remove()
+// -----------------------------------------------------------------------
