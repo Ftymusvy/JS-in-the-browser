@@ -64,3 +64,6 @@ att.value = "_blank"
 att
 
 document.getElementById("ref-link").setAttributeNode(att)
+
+document.querySelector("#main-title").style = "color:green"
+document.querySelector("#main-title").style = "color:green;background-color:blue"
