@@ -31,3 +31,16 @@ form {
 .red-text{
     color: red;
 }
+
+
+#main-title{
+  animation-name: color-change;
+  animation-duration: 5s;
+}
+
+
+@keyframes color-change {
+  100%{
+    color: red;
+  }
+}

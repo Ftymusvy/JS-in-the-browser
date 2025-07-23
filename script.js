@@ -89,3 +89,7 @@ document.querySelector("#main-title").style = "color:green;background-color:blue
 // HTMLCollection(4) [li.to-do-item, li.to-do-item, li.to-do-item, li.to-do-item]
 // let classes1 = document.getElementsByClassName("to-do-item")[1].remove()
 // -----------------------------------------------------------------------
+
+
+document.querySelector("#main-title").addEventListener("animationstart", (e)=>{console.log("start" , e)} )
+document.querySelector("#main-title").addEventListener("animationend", (e)=>{console.log("end" , e)} )
