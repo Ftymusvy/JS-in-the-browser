@@ -94,7 +94,7 @@ document.querySelector("#main-title").style = "color:green;background-color:blue
 // document.querySelector("#main-title").addEventListener("animationstart", (e)=>{console.log("start" , e)} )
 // document.querySelector("#main-title").addEventListener("animationend", (e)=>{console.log("end" , e)} )
 
-
+document.querySelector("li").addEventListener("click", clickEvent)
 function clickEvent() {
     console.log("hi")
 }
