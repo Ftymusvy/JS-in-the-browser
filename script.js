@@ -102,3 +102,9 @@ document.querySelector("#main-title").style = "color:green;background-color:blue
 document.querySelector("ul").addEventListener("click", (p)=>{
     console.log(p.target)
 })
+// window.addEventListener("load" , ()=>{
+//     console.log("hi")})
+
+document.addEventListener("DOMContentLoaded", () => {
+    console.log("DOM is fully loaded and parsed");
+});
