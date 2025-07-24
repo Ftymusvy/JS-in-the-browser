@@ -109,12 +109,34 @@ document.querySelector("ul").addEventListener("click", (p)=>{
 //     console.log("DOM is fully loaded and parsed");
 // });
 
-document.querySelector("#myform input[type=password]").addEventListener("input" , (e)=>{
+// document.querySelector("#myform input[type=password]").addEventListener("input" , (e)=>{
 
-   if (e.target.value == "123"){
-    console.log("enter")
-   }
-   else
-    console.log("wrong tray again")
+//    if (e.target.value == "123"){
+//     console.log("enter")
+//    }
+//    else
+//     console.log("wrong tray again")
       
+// })
+//-----------------------------------------------------------
+//درگ اند دراپ
+  
+document.querySelector("#main-title").addEventListener("dragstart" , (e)=>{
+          e.dataTransfer.setData("myh" , e.target.id)
+          console.log("dragstart")
 })
+
+document.querySelector("header").addEventListener("dragover" , (e)=>{
+          console.log("dragover");
+          e.preventDefault();
+})
+
+document.querySelector("header").addEventListener("drop" , (e)=>{
+          console.log("drop");
+          let dataid = e.dataTransfer.getData("myh")
+          e.target.appendChild(document.getElementById(dataid))
+})
+
+
+
+//------------------------------------------------------------
