@@ -105,6 +105,16 @@ document.querySelector("ul").addEventListener("click", (p)=>{
 // window.addEventListener("load" , ()=>{
 //     console.log("hi")})
 
-document.addEventListener("DOMContentLoaded", () => {
-    console.log("DOM is fully loaded and parsed");
-});
+// document.addEventListener("DOMContentLoaded", () => {
+//     console.log("DOM is fully loaded and parsed");
+// });
+
+document.querySelector("#myform input[type=password]").addEventListener("input" , (e)=>{
+
+   if (e.target.value == "123"){
+    console.log("enter")
+   }
+   else
+    console.log("wrong tray again")
+      
+})
